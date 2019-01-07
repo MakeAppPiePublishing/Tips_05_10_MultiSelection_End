@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MultiselectionButton" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="9kH-td-kgY">
+                                <rect key="frame" x="10" y="104" width="170.33333333333334" height="200"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1000" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jO1-iJ-E27">
+                                        <rect key="frame" x="0.0" y="0.0" width="170.33333333333334" height="44"/>
+                                        <color key="backgroundColor" name="Green 75% #40C040"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
+                                        <state key="normal" title="Pizza">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didSelectDessert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KKI-dk-Qfd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1001" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rdv-vY-AVg">
+                                        <rect key="frame" x="0.0" y="52" width="170.33333333333334" height="44"/>
+                                        <color key="backgroundColor" name="Green 75% #40C040"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
+                                        <state key="normal" title="Mochi">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didSelectDessert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GZ1-Qa-t00"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1002" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MCa-Nm-seN">
+                                        <rect key="frame" x="0.0" y="104" width="170.33333333333334" height="44"/>
+                                        <color key="backgroundColor" name="Green 75% #40C040"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
+                                        <state key="normal" title="Rosettes">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didSelectDessert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uhf-a5-K1Y"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1003" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwV-Dn-Say">
+                                        <rect key="frame" x="0.0" y="156" width="170.33333333333334" height="44"/>
+                                        <color key="backgroundColor" name="Green 75% #40C040"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
+                                        <state key="normal" title="Napoleon">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didSelectDessert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I3F-Ih-7sM"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="UBK-aJ-dmu">
+                                <rect key="frame" x="10" y="650" width="355" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="XSb-k2-YoP"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Pizza"/>
+                                    <segment title="Mochi"/>
+                                    <segment title="Rosettes"/>
+                                    <segment title="Napoleon"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZ1-Dj-pYn">
+                                <rect key="frame" x="10" y="567" width="355" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iZ1-Dj-pYn" firstAttribute="top" relation="greaterThanOrEqual" secondItem="9kH-td-kgY" secondAttribute="bottom" constant="30" id="EOg-Vr-edL"/>
+                            <constraint firstItem="UBK-aJ-dmu" firstAttribute="top" secondItem="iZ1-Dj-pYn" secondAttribute="bottom" constant="40" id="L3J-B4-xP6"/>
+                            <constraint firstItem="UBK-aJ-dmu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Szw-w9-64p"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UBK-aJ-dmu" secondAttribute="bottom" constant="100" id="Tvz-l7-Bdx"/>
+                            <constraint firstItem="9kH-td-kgY" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="5:11" id="VOW-gi-UbN"/>
+                            <constraint firstItem="9kH-td-kgY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="gyl-4E-e2r"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UBK-aJ-dmu" secondAttribute="trailing" constant="10" id="lza-O9-fOH"/>
+                            <constraint firstItem="iZ1-Dj-pYn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="u6k-hm-EF2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iZ1-Dj-pYn" secondAttribute="trailing" constant="10" id="wnG-Ra-Nag"/>
+                            <constraint firstItem="9kH-td-kgY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="xEp-Ub-Rwh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="selectionLabel" destination="iZ1-Dj-pYn" id="lvD-Nm-O7A"/>
+                        <outletCollection property="dessertSelection" destination="jO1-iJ-E27" collectionClass="NSMutableArray" id="fAU-GE-7Eg"/>
+                        <outletCollection property="dessertSelection" destination="rdv-vY-AVg" collectionClass="NSMutableArray" id="BAu-Lm-OlE"/>
+                        <outletCollection property="dessertSelection" destination="MCa-Nm-seN" collectionClass="NSMutableArray" id="a4Z-q4-ok6"/>
+                        <outletCollection property="dessertSelection" destination="fwV-Dn-Say" collectionClass="NSMutableArray" id="WIh-l8-Pzf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="Green 75% #40C040">
+            <color red="0.25099998712539673" green="0.75300002098083496" blue="0.25099998712539673" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
